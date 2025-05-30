@@ -13,16 +13,32 @@ This repository contains supplementary materials for the paper  **_"Towards Fast
 - [`input.tsv`](input.tsv): A Tab Separated Values (TSV) file containing input information for model training. The columns are:
   - pdb: PDB ID of the protein;
   - chain: Combination of chains in the form Receptors:Ligands;
-  - dgexp: Experimental deltaG value for the complex as reported in Vangone, 2015;
-  - dgpre: Predicted deltaG value for the model described in Vangone, 2015;
+  - dgexp: Experimental ΔG value for the complex as reported in Vangone, 2015;
+  - dgpre: Predicted ΔG value for the model described in Vangone, 2015;
   - bsa: Binding Surface Area (BSA) value for the complex, as described in Vangone, 2015;
   - HB, AT, RE, HY, AS, SB, DS, PA, PosA, NegA: Number of Hydrogen Bond, Attractive, Repulsive, Hydrophobic, Aromatic Stacking, Salt Bridge, Disulfide Bond, Polar-Apolar, Positive-Apolar, and Negative-Apolar contacts detected using COCαDA (Lemos, 2024), respectively.
 
-- [`results.`](results.): Results file.
+- [`output.tsv`](output.tsv): Results file.
 The columns are:
-  - a
-  - b
-  ...
+  - pdb: PDB ID of the protein;
+  - chain: Combination of chains in the form Receptors:Ligands;
+  - dgexp: Experimental ΔG value for the complex as reported in Vangone, 2015;
+  - prediction-PA: Predicted ΔG value using the polar-apolar atom pairs as input; 
+  - prediction-AT: Predicted ΔG value using the attractive interactions as input;
+  - prediction-HB: Predicted ΔG value using the hydrogen bonds counts as input;
+  - prediction-RE: Predicted ΔG value using the repulsive interactions counts as input;
+  - prediction-HY: Predicted ΔG value using the salt bridges counts as input;
+  - prediction-SB: Predicted ΔG value using the negative-apolar atom pairs as input;
+  - prediction-PosA: Predicted ΔG value using the positive-apolar atom pairs as input;
+  - prediction-NegA: Predicted ΔG value using the negative-apolar atom pairs as input;
+  - count-PA: Count of polar-apolar atom pairs detected in the input PDB;
+  - count-AT: Count of attractive interactions detected in the input PDB;
+  - count-HB: Count of hydrogen bonds detected in the input PDB;
+  - count-RE: Count of repulsive interactions detected in the input PDB;
+  - count-HY: Count of hydrophobic interactions detected in the input PDB;
+  - count-SB: Count of salt bridges detected in the input PDB;
+  - count-PosA: Count of positive-apolar atom pairs detected in the input PDB;
+  - count-NegA: Count of negative-apolar atom pairs detected in the input PDB.
 
 ---
 
