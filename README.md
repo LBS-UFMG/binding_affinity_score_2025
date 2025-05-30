@@ -1,5 +1,3 @@
-# binding_affinity_score_2025
- 
 # 🧾 Supplementary files for Binding Affinity Scoring via Interatomic Contacts
 ---
 
