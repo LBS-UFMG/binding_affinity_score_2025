@@ -18,12 +18,14 @@ This repository contains supplementary materials for the paper  **_"Towards Fast
   - bsa: Binding Surface Area (BSA) value for the complex, as described in Vangone, 2015;
   - HB, AT, RE, HY, AS, SB, DS, PA, PosA, NegA: Number of Hydrogen Bond, Attractive, Repulsive, Hydrophobic, Aromatic Stacking, Salt Bridge, Disulfide Bond, Polar-Apolar, Positive-Apolar, and Negative-Apolar contacts detected using COCαDA (Lemos, 2024), respectively.
 
-- [`results.`](results.): Results file.
-The columns are:
-  - a
-  - b
-  ...
+- [`output.tsv`](output.tsv): A Tab Separated Values (TSV) file containing the linear regression model results using individual contact types derived from COCαDA (Lemos, 2024). The columns are:
+  - pdb: PDB ID of the protein;
+  - chain: Combination of chains in the form Receptors:Ligands;
+  - dgexp: Experimental deltaG value for the complex as reported in Vangone, 2015;
+  - prediction-PA, AT, HB, RE, HY, SB, PosA, NegA: Predicted deltaG value for the linear regression model using individual contact types only. Each column represents values for Hydrogen Bond, Attractive, Repulsive, Hydrophobic, Aromatic Stacking, Salt Bridge, Disulfide Bond, Polar-Apolar, Positive-Apolar, and Negative-Apolar, respectively;
+  - count-PA, AT, HB, RE, HY, SB, PosA, NegA: Number of Hydrogen Bond, Attractive, Repulsive, Hydrophobic, Aromatic Stacking, Salt Bridge, Disulfide Bond, Polar-Apolar, Positive-Apolar, and Negative-Apolar contacts detected using COCαDA (Lemos, 2024), respectively.
 
+  
 ---
 
 ## References:
